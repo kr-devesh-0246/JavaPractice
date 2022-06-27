@@ -6,6 +6,7 @@ public class VariousInputs {
         //initiating and declaring various data type objects
         Scanner str_inp1 = new Scanner(System.in);
         Scanner str_inp2 = new Scanner(System.in);
+        Scanner bool_inp = new Scanner(System.in);
         Scanner int_inp = new Scanner(System.in);
         Scanner float_inp = new Scanner(System.in);
         Scanner double_inp = new Scanner(System.in);
@@ -16,6 +17,9 @@ public class VariousInputs {
 
         System.out.print("Enter a sentence: ");
         System.out.println("This is inputted word: " + str_inp2.nextLine());
+
+        System.out.print("Enter a bool: ");
+        System.out.println("This is inputted bool: " + bool_inp.nextBoolean());
 
         System.out.print("Enter an int input: ");
         System.out.println("This is inputted int: " + int_inp.nextInt());
