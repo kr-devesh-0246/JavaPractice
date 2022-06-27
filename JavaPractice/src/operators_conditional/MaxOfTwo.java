@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class MaxOfTwo {
     public static void main(String[] args){
-//        input read karo
+        //Method-1(Using variable input)
+
 //        int num1 = 3;
 //        int num2 = 4;
 //        //condition
@@ -13,6 +14,8 @@ public class MaxOfTwo {
 //        if(num2>num1)
 //            System.out.println("num2 is greater");
 //        //execute
+
+        //Method-2(Using user input)
         Scanner s1 = new Scanner(System.in);
         Scanner s2 = new Scanner(System.in);
 
