@@ -19,7 +19,9 @@ public class MaxOfTwo {
         Scanner s1 = new Scanner(System.in);
         Scanner s2 = new Scanner(System.in);
 
+        System.out.print("Enter num1: ");
         int num1 = s1.nextInt();
+        System.out.print("Enter num2: ");
         int num2 = s2.nextInt();
 
         if (num1 > num2 ) {
