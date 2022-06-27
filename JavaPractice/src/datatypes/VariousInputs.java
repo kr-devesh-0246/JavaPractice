@@ -29,6 +29,5 @@ public class VariousInputs {
 
         System.out.print("Enter a double: ");
         System.out.println("This is inputted double: " + double_inp.nextDouble());
-
     }
 }
