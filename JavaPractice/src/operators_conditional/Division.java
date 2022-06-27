@@ -13,5 +13,7 @@ public class Division {
         double i9 = (double) 1 / 2; //OK, double = double
         float i10 = 1.0f / 2.0f;    //OK, float = float
         float i11 = 1 / 2;          //Ok, float = int
+
+
     }
 }
