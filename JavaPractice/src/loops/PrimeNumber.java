@@ -14,9 +14,6 @@ public class PrimeNumber {
                 sum += i;
 
         }
-        if (sum == 0)
-            System.out.println("Prime number");
-        else
-            System.out.println("Not a prime number");
+        System.out.println(sum == 0 ? "Prime num" : "Not a prime num");
     }
 }
