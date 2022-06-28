@@ -7,7 +7,6 @@ public class EvenOddMultiples {
             if (i % 2 == 0) {
                 System.out.print(i + " ");
             }
-
         }
     }
 }
