@@ -12,12 +12,21 @@ public class SwitchCalculator {
         char op = s.next().charAt(0);
         double d2 = s.nextDouble();
 
-        switch (op) {
-            case ('+') -> System.out.println(d1 + d2);
-            case ('-') -> System.out.println(d1 - d2);
-            case ('*') -> System.out.println(d1 * d2);
-            case ('/') -> System.out.println(d1 / d2);
-            default -> System.out.println("Give the inputs carefully.");
+        switch(op) {
+            case ('+'):
+                System.out.println(d1 + d2);
+                break;
+            case ('-'):
+                System.out.println(d1 - d2);
+                break;
+            case ('*'):
+                System.out.println(d1 * d2);
+                break;
+            case ('/'):
+                System.out.println(d1 / d2);
+                break;
+            default:
+                System.out.println("Give the inputs carefully.");
         }
     }
 }
