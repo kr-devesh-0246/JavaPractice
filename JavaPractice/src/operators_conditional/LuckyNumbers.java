@@ -3,11 +3,12 @@ import java.util.Scanner;
 
 public class LuckyNumbers {
     public static void main(String[] args) {
+
         //Lucky no - ABCD is lucky if A+B == C+D
         System.out.print("Enter a four digit integer: ");
         Scanner s = new Scanner(System.in);
+
         int num = s.nextInt();
-        //convert the string to num for if condition
 
         if (  num > 9999 ||  num < 1000 ) {
             System.out.println("Enter a 4 digit int: ");
