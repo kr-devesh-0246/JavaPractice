@@ -1,3 +1,6 @@
+/*Write a program which reads a sequence fo integers from the users and stops by displaying "Done" when the sum of these
+values exceeds 100 */
+
 package loops;
 import java.util.Scanner;
 public class ExerciseTwo {
