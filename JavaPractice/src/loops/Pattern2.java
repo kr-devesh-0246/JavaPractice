@@ -1,3 +1,8 @@
+//1
+//22
+//333
+//4444
+
 package loops;
 import java.util.Scanner;
 public class Pattern2 {
