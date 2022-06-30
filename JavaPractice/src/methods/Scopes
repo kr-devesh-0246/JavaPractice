@@ -2,7 +2,7 @@ Scope-The scope of a variable is the part of the program where the variables can
 -A variable defined inside a local variable is called local variable.
 -The scope of a local variable starts from its declaration and continues to the end of block which
 contains the variable.
--A loval variable must be declared and initialised before it is used.
+-A local variable must be declared and initialised before it is used.
 -Parameters are also local variables but their scope is the whole method.
 
 Important(Naming of local variables):
