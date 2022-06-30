@@ -15,6 +15,7 @@ public class Palindrome {
         }
         System.out.println(str);
         System.out.println(rev);
-        System.out.print((str == rev) ? true : false);
+        //below throws false because it compares the address of both variables.
+        //System.out.print((str == rev) ? true : false);
     }
 }
