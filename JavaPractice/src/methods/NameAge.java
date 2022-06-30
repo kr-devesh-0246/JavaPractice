@@ -14,8 +14,8 @@ package methods;
 import java.util.Scanner;
 public class NameAge {
     public static void main(String[] args){
-        System.out.println(sayName());
-        System.out.println(sayAge());
+        System.out.println("Enter your name and age ");
+        System.out.println(sayName() + " " + sayAge());
     }
     public static String sayName(){
         System.out.print("Enter name: ");
