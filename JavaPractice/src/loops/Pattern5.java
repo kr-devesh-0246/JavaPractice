@@ -14,7 +14,8 @@ public class Pattern5 {
 
         for (int i = 1; i <= n; i++) {
 
-            for(int j = 1; j <=  )
+            //start from below line
+            // for(int j = 1; j <=  )
 
             System.out.println();
         }
