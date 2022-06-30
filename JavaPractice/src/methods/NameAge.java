@@ -14,21 +14,15 @@ package methods;
 import java.util.Scanner;
 public class NameAge {
     public static void main(String[] args){
-        sayName();
-        sayAge();
+        System.out.println(sayName());
+        System.out.println(sayAge());
     }
-    public static void sayName(){
+    public static String sayName(){
         System.out.print("Enter name: ");
-        Scanner s_name = new Scanner(System.in);
-        String name = s_name.nextLine();
-
-        System.out.println(name);
+        return new Scanner(System.in).nextLine();
     }
-    public static void sayAge(){
+    public static int sayAge(){
         System.out.print("Enter age: ");
-        Scanner s_age = new Scanner(System.in);
-        int age = s_age.nextInt();
-
-        System.out.println(age);
+        return new Scanner(System.in).nextInt();
     }
 }
