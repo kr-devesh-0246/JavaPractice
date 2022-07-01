@@ -1,7 +1,7 @@
 // write a program that fills an array with n integers entered by user
 package arrays;
 import java.util.Scanner;
-public class UserInputtedArray {
+public class Playground {
     public static void main(String[] args) {
 
         System.out.print("Enter n: ");
