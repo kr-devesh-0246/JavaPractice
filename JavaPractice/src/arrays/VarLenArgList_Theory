@@ -1,0 +1,6 @@
+Variable-Length Argument Lists
+-Only one variable-length parameter may be specified in a method
+-It must be the last parameter
+-Any other parameters must precede it
+-We can pass an array or a variable numbers fo arguments, Java creates an array
+and passes the arguments to it.
