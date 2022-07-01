@@ -1,0 +1,136 @@
+Outline:-
+1) The null values
+2) Arrays in java
+3) Creating arrays and default values
+4) Accessing array elements
+5) Array initializers
+6) Printing arrays
+
+1) NULL - The value of an object that references nothing
+String text; //null
+text = "some text"; //Address of "some text"
+
+2) Arrays - A collection of variables of the same data type
+-An array in java is an object.
+-An array variable references a group of data
+-The size of an array is fixed
+
+Creating array:-
+dataType[] arrayName; //null
+
+arrayName = new dataType[10]; //Address of the 10 elements of type datatype
+
+dataType[] arrayName = new dataType[10];
+Example
+int[] numbers = new int[20];
+
+Q. What are the default values of array?
+Ans-When an array is created its elements are assigned the following default
+values:
+-0 for the numeric primitive data types
+-\u0000 for char types
+-false for boolean types
+-null for reference types
+
+4) Accessing array elements:-
+Use brackets and indices
+
+int[] numbers = new int[5]; //{0, 0, 0, 0, 0}
+numbers[0] = 5; // {5, 0, 0, 0, 0}
+numbers[2] = 8; // {5, 0, 8, 0, 0}
+numbers[4] = 10; // {5, 0, 8, 0, 10}
+
+5) Array Initializers
+double[] numbers = {1.9, 2.9, 3.4, 3.5};
+it is simply doing below shown tidious task
+double[] numbers = new double[4];
+numbers[0] = 1.9;
+numbers[1] = 2.9;
+numbers[2] = 3.4;
+numbers[3] = 3.5;
+
+Remember you cant initiate and then declare, it will show ERROR
+double[] numbers;
+numbers = {1.9, 2.9, 3.4, 3.5};
+
+6) Printing Arrays
+int[] numbers = {1, 2, 3};
+
+System.out.println(numbers); //Address printed: [I@7b23ec81
+
+for (int i = 0; i < numbers.length; i++)
+    System.out.print(numbers[i] + " "); //1 2 3
+
+
+
+
+
+
+
+
+
+
+Lecture-2
+
+Outline:-
+1) Anonymous arrays
+2) Exceeding Array bounds
+3) Printing char arrays
+4) Printing char arrays
+5) Passing arrays to methods
+6) Returning arrays from methods
+
+1) Anonymous Arrays - An array without a variable referencing it.
+Simple.
+Previously like we uses the scanner class without referencing(i.e. naming)
+new Scanner(System.in).nextDouble();
+we can use an array class also without referencing it like below
+new int[] {1,2,3,4};
+printArray(new int[] {1, 2, 3, 4});
+Such an array which is used without being referred is called Anonymous array.
+
+2) Exceeding Array Bounds - The indices must be between 0 and length-1
+3) Printing Character arrayschar[] chars = {'a', 'b', 'c', 'd'};
+
+// Index -1 out of bounds for length 4
+// It is not ERROR it is simply an Exception,
+System.out.println(chars[-1]);
+
+// Index 4 out of bounds for length 4
+// It is an ERROR
+System.out.println(chars[4]);
+
+This exception is called ArrayIndexOutOfBoundsException
+
+4) Passing Arrays to methods - Arrays are passed by reference(here the variable
+name is reference, simple).
+Key:-Arrays are objects and they are passed by reference (baaki sab kahani hai)
+Example
+public static void main(String[] args){
+    int[] numbers = {0, 1};
+    change(numbers);
+    printArray(numbers);
+}
+public static void change(int[] numbers) {
+    numbers[0] = 1; // {1, 1}
+    numbers[1] = 0; // {1, 0}
+}
+public static void printArray(int[] numbers) {
+    for(int i = 0; i < numbers.length; i++)
+        System.out.print(numbers[1] + " ");
+}
+
+Key Point on scope of an object outside method: An object is destroyed when it
+is no longer referenced by a variable.
+
+6) Returning arrays from methods
+
+Let's define such method below
+public static void main(String[] args) {
+    int[] numbers = getNumbers();
+    printArray(numbers); // 1 2 3 4 5
+}
+
+public static int[] getNumbers() {
+    return new int[] {1, 2, 3, 4, 5};
+}
