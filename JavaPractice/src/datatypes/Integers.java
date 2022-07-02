@@ -6,6 +6,5 @@ public class Integers {
         short s1 = 20 ;
         int i1 = 100 ;
         long l1 = 999 ;
-
     }
 }

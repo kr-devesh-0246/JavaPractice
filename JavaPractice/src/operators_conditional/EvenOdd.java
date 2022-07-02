@@ -24,7 +24,6 @@ public class EvenOdd{
             case 1 :
                 System.out.println("Odd");
                 break;
-
         }
     }
 }

@@ -15,7 +15,5 @@ public class StringConcatination {
         //3. Using the concat method
         System.out.println("Devesh ".concat("is healthy ").concat("and fine")); //Devesh is healthy and fine
         System.out.println("Just a line.");
-
     }
-
 }

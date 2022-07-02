@@ -8,7 +8,6 @@ public class Pattern7 {
         int n =  s.nextInt();
 
         for (int i = 1; i <= n; i++){
-
             System.out.println();
         }
     }

@@ -9,6 +9,5 @@ public class NestedIf{
             System.out.println("=10");
         else
             System.out.println("<10");
-
     }
 }

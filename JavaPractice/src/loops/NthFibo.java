@@ -20,6 +20,5 @@ public class NthFibo {
             b = c;
             c = a + b;
         }
-
     }
 }

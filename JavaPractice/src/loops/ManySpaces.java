@@ -18,7 +18,6 @@ public class ManySpaces {
             result += " ";
         }
         System.out.println(result);
-
     }
 }
 

@@ -41,16 +41,12 @@ public class PrimeInRange {
             for (int i = 1; i <= n1; i++) {
                 if (n1 % i != 0)
                     flag = false;
-
             }
             if (flag ==true)
                 System.out.print( n1 + " ");
-
         }
         //segment working fine
         else
             System.out.println("Please enter n2 > n1");
-
-
     }
 }

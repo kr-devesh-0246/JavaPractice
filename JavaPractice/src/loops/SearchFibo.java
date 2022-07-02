@@ -7,9 +7,9 @@ public class SearchFibo {
         System.out.print("Enter n: ");
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
+
         //for loop to make a fibonacci sequence
-        int a = 1;
-        int b = 1;
+        int a = 1; int b = 1;
         int c = a+b;
 
         if (n == 0)

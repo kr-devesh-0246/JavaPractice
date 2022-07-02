@@ -21,12 +21,10 @@ public class PrimeInRangeNew {
         }
         return sum == 0 ;
     }
-
     public static void printPrimeNumbers(int start, int end){
         for (int i = start; i <= end; i++){
             if(isPrime(i) == true)
                 System.out.print(i + " ");
         }
-
     }
 }

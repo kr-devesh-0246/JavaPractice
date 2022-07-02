@@ -16,7 +16,5 @@ public class TypeCasting {
         int i1 = (int) 4.5f;
         int i2 = (int) 9L ;
         float f1 = (float) 4.5;
-
     }
-
 }

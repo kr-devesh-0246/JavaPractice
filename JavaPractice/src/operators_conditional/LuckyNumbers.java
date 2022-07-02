@@ -20,7 +20,6 @@ public class LuckyNumbers {
             int a = (num / 1000) % 10;
 
             System.out.println(a+b == c+d ? "Lucky number" : "Not a lucky number");
-
         }
     }
 }

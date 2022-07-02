@@ -7,6 +7,5 @@ public class NameAge {
 
         System.out.print("Enter your name and age: ");
         System.out.println(name.nextLine() + "You are "+ age.nextInt() + " years old buddy.");
-
     }
 }

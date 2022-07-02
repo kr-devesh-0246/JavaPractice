@@ -8,12 +8,9 @@ public class WhileLoop {
         int num = s.nextInt();
 
         while (num < 1 || num > 10){
-
             System.out.print("Enter int in range(1,10): ");
             num = s.nextInt();
         }
         System.out.println("Ok Thank you, it's a valid input:)");
     }
-
-
 }
