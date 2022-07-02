@@ -10,7 +10,7 @@ public class ArraysClassEquals {
         System.out.println(strings1 == strings2); //false
         System.out.println(Arrays.equals(strings1, strings2)); //true
 
-        //Similaryly for Points
+        //Similarly for Points
         Point[] points1 = {new Point(1, 2), new Point(3, 4)};
         Point[] points2 = {new Point(1, 2), new Point(3, 4)};
         Point[] points3 = {new Point(0, 0), new Point(1, 1)};

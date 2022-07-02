@@ -102,9 +102,9 @@ Outline:-
 * Filling arrays
 * Printing arrays
 
-*Filling Arrays(using fill() method)
+*Filling an Arrays with values(using fill() method)
 
-Syntax - fill(array, value): fill whole array
+Syntax - fill(array, value): fill the whole array
 int[] numbers1 = new int[8]; // {0, 0, 0, 0, 0, 0, 0, 0}
 Arrays.fill(numbers1, 3);    // {3, 3, 3, 3, 3, 3, 3, 3}
 
