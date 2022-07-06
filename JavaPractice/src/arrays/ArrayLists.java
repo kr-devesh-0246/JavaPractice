@@ -3,7 +3,7 @@
  a primitive type(int, boolean, double, char)*/
 package arrays;
 import java.util.ArrayList;
-
+import java.util.Collections;
 public class ArrayLists {
     public static void main (String[] args) {
         //declaring
@@ -47,5 +47,21 @@ public class ArrayLists {
 
         //Size (using the size() method)
         fruits.size(); // 4
+
+        //looping through an ArrayList
+        for (int i = 0; i < fruits.size(); i++) {
+            System.out.print(fruits.get(i) + " ");
+        }
+        System.out.println();
+
+        //Sort an ArrayList(Using sort method of Collections class)
+        System.out.println(fruits);
+        fruits.set(2, "Apple");
+        System.out.println(fruits);
+        fruits.set(0, "Guava");
+        System.out.println(fruits);
+        Collections.sort(fruits);
+        System.out.println(fruits); //Sorted
+
     }
 }
