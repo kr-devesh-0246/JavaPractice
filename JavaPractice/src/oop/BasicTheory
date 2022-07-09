@@ -1,3 +1,9 @@
+Lecture 1
+
+Outline
+1) OOP and Objects
+2) Object's state, behaviour, and identity
+
 Object Oriented programming
 It involves programming using objects.
 Object: It represents an entity/objects in the real world
@@ -22,3 +28,100 @@ Point p2 = new Point(1, 0);
 //Since they both have same class => they have same state and behaviour, but their
 identity is different
 System.out.println(p1 == p2); //false, as it will compare their memory locations
+
+Lecture 2
+
+Outline
+1) Classes and Objects
+2) Constructors
+3) Default constructors
+4) GUI and OOP
+
+1) Classes - A class defines the data fields and actions of an Object.
+-To create an Object we need a template/blueprint that defines the data fields and
+methods that this Object will have:
+  -- Class
+  -- An object is an instance of a Class
+-Objects of the same type are created/instantiated from the same class
+-A java class uses variables to define the data fields and methods to define
+actions. These special methods are called constructors.
+
+2) Constructors - A method used to create Objects
+-A constructor can do anything, it is simply a method, but it is designed to do
+initializing actions, such as initializing the data fields of an object.
+
+Example;
+Point p1 = new Point(0, 1);
+
+public Point(int x, int y) {
+    // these 2 sets are called initializing the data fields
+    this.x = x;
+    this.y = y;
+}
+
+//this keyword refers to the object
+
+3) Default Constructors - A constructor that takes no parameters
+If we create a class without creating a constructor, java automatically creates a
+default constructor that takes no parameters and we will be able to use it to create
+objects of this class.
+
+4) GUI and OOP
+
+Lecture 3
+
+Outline
+1) Defining a Class
+2) Defining attributes
+3) Defining methods
+
+Sketch
+-Data Fields(attributes):
+    -> centre : Point
+    -> radius : double
+-Methods(actions)
+    -> getArea() : double
+    -> getPerimeter() : double
+    -> setRadius(newRadius : double) : void
+    -> setCentre(newCentre : Point) : void
+
+1) Defining a Class
+class Circle {
+
+}
+Here,
+-There is no main() method, this class will be used to create Circle objects,
+not to run some code
+-We will use this class in the main() method of our Main class
+
+2) Defining the attributes
+class Circle {
+    Point centre;
+    double radius;
+}
+-Declared directly inside the class
+-Can be accessed anywhere inside the class, inside all methods
+-Take default values(centre is null & radius is 0.0)
+-Each object we create will have a centre and radius
+
+3) Defining the methods
+class Circle {
+    Point centre;
+    double radius;
+
+    double getPerimeter() {
+        return 2 * Math.PI * radius;
+    }
+
+    double getArea() {
+        return Math.PI * radius * radius;
+    }
+
+    void setRadius(double newRadius) {
+        radius = newRadius;
+    }
+
+    void setCentre(Point newCentre) {
+        centre = newCentre;
+    }
+}
