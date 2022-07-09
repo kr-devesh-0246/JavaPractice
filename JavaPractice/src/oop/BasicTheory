@@ -125,3 +125,79 @@ class Circle {
         centre = newCentre;
     }
 }
+
+Lecture 4
+
+Outline
+1) Instantiating Objects
+2) The new keyword
+3) Accessing attributes & methods
+4) Changing the value of an attribute
+5) Default values
+
+Take the same Circle class
+
+1) Instantiating Objects
+
+public static void main(String[] args) {
+    Circle c1 = new Circle(); //Default Constructor
+    System.out.println( c1.centre ); // null
+    System.out.println( c1.radius ); // 0.0
+}
+
+Revising Default Values
+class DefaultValues {
+    Point point; //null
+    String str; // null
+    double d; //0.0
+    int i; // 0
+    char c; // '\u0000'
+    boolean b; // false
+}
+
+4) Changing the values of attributes
+
+public static void main(String[] args) {
+    Circle c1 = new Circle();
+    c1.centre = new Point(0, 0);
+    c1.radius = 3;
+
+    System.out.println(c1.centre); // java.awt.Point[x = 0, y = 0]
+    System.out.println(c1.radius); // 3.0
+}
+
+//by using set methods that can access the attributes
+
+public static void main(String[] args) {
+    Circle c1 = new Circle();
+    c1.setCentre(new Point(1, 2));
+    c1.setRadius(5);
+
+    System.out.println(c1.centre); //java.awt.Point[x=1,y=2]
+    System.out.println(c1.radius); // 5.0
+
+// By calling methods
+
+Getting the area and perimeter
+public static void main(String[] args) {
+    Circle c1 = new Circle();
+    c1.setCentre(new Point(1, 2));
+    c1.setRadius(5);
+
+    System.out.println("Area = " + c1.getArea());
+    System.out.println("Perimeter = " + c1.getPerimeter());
+}
+
+Lecture 5
+
+Outline
+1) Constructors
+2) Default constructor
+3) Overloading constructors
+
+1) Constructor : A method used to instantiate and intialize objects
+-A constructor must have the same name as the class
+-Constructor do not have a return type
+-Constructor are invoked using the new operator
+-Constructor play the role of initializing objects
+-A default constructor is a zero-argument constructor with an empty body
