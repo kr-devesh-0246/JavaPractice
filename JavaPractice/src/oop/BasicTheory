@@ -1,0 +1,24 @@
+Object Oriented programming
+It involves programming using objects.
+Object: It represents an entity/objects in the real world
+An object has some state, a behaviour and an identity
+
+State: The state of an object represents the data field of the obect with
+their current values
+-Also called attributes/properties
+-For example, a point object: x and y are data field, rectangle: length and breadth,
+circle: radius, pen: color of ink, price, ink left
+
+Behaviour: Defined by the methods of an object.
+-The behaviour of an object is also called its action.
+-To invoke/call a method on an object is to ask the object to perform an action.
+example: str.charAt(2);
+example: getArea();
+example: getPerimeter();
+
+Identity: What makes an object unique, i.e memory address
+Point p1 = new Point(1, 0);
+Point p2 = new Point(1, 0);
+//Since they both have same class => they have same state and behaviour, but their
+identity is different
+System.out.println(p1 == p2); //false, as it will compare their memory locations
