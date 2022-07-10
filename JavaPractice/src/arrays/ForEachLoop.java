@@ -10,11 +10,6 @@ public class ForEachLoop {
         integers.add(4);
         System.out.println(integers);
 
-        for (:
-             ) {
-            
-        }() {
 
-        }
     }
 }
